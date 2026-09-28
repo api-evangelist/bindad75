@@ -1,23 +1,51 @@
 aid: bindad75
+
 name: Bindad75
-description: 'Bindad75 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bindad75 is a stub entry in the API Evangelist catalog, originating from a secondary‑market harvest. The company currently has no publicly documented API surface, website, or detailed public information. This placeholder entry enables the enrichment pipeline to track and later profile Bindad75 should authoritative sources become available, ensuring the catalog remains comprehensive and up‑to‑date.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bindad75/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- API
+- Data
+- Technology
+- Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bindad75-hosts.yml
+- type: Vendors
+  url: vendors/bindad75-vendors.yml
+- type: DomainSecurity
+  url: security/bindad75-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/bindad75
+
+apis: []
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
